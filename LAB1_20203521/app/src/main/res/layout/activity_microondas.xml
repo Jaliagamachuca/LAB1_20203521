@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Microondas">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Título del Quiz -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:text="MICROONDAS"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"/>
+
+        <!-- Número y enunciado -->
+        <TextView
+            android:id="@+id/txtPreguntaNumero"
+            android:text="Pregunta 1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtPregunta"
+            android:text="Aquí va el enunciado de la pregunta"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"/>
+
+        <!-- Opciones -->
+        <RadioGroup
+            android:id="@+id/radioGroupOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/opcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción 1"/>
+
+            <RadioButton
+                android:id="@+id/opcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción 2"/>
+
+            <RadioButton
+                android:id="@+id/opcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción 3"/>
+
+            <RadioButton
+                android:id="@+id/opcion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción 4"/>
+        </RadioGroup>
+
+        <!-- Puntaje de esta pregunta -->
+        <TextView
+            android:id="@+id/txtPuntajePregunta"
+            android:text="Puntaje: 0"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btnAnterior"
+                android:text="Anterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:text="Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
